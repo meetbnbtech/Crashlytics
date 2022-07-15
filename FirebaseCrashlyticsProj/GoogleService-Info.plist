@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CLIENT_ID</key>
+    <string>891887474778-jc8jj6j4acn2shire029fft7b51df4s6.apps.googleusercontent.com</string>
+    <key>REVERSED_CLIENT_ID</key>
+    <string>com.googleusercontent.apps.891887474778-jc8jj6j4acn2shire029fft7b51df4s6</string>
+    <key>API_KEY</key>
+    <string>AIzaSyAmLCKAEh_GOs29A6JK9XKzZmepz-GO-c4</string>
+    <key>GCM_SENDER_ID</key>
+    <string>891887474778</string>
+    <key>PLIST_VERSION</key>
+    <string>1</string>
+    <key>BUNDLE_ID</key>
+    <string>com.meet.FirebaseCrashlyticsProj</string>
+    <key>PROJECT_ID</key>
+    <string>fir-crashlyticsproj</string>
+    <key>STORAGE_BUCKET</key>
+    <string>fir-crashlyticsproj.appspot.com</string>
+    <key>IS_ADS_ENABLED</key>
+    <false></false>
+    <key>IS_ANALYTICS_ENABLED</key>
+    <false></false>
+    <key>IS_APPINVITE_ENABLED</key>
+    <true></true>
+    <key>IS_GCM_ENABLED</key>
+    <true></true>
+    <key>IS_SIGNIN_ENABLED</key>
+    <true></true>
+    <key>GOOGLE_APP_ID</key>
+    <string>1:891887474778:ios:220ca2ba5a02e681cae063</string>
+</dict>
+</plist>
+

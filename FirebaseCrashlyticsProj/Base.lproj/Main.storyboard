@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E29-g9-iWr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First VC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FirebaseCrashlyticsProj" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHO-Hp-vhx">
+                                <rect key="frame" x="161.5" y="731" width="91" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Go to next"/>
+                                <connections>
+                                    <segue destination="NmT-pF-bc4" kind="push" id="iFU-Xt-dy0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uV7-g0-hLw">
+                                <rect key="frame" x="122" y="459.5" width="170.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Test Crash On First VC"/>
+                                <connections>
+                                    <action selector="crashButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xAF-ft-HVU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uV7-g0-hLw" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="3Rg-lw-ulR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wHO-Hp-vhx" secondAttribute="bottom" constant="100" id="LIs-XD-PsR"/>
+                            <constraint firstItem="wHO-Hp-vhx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="so5-5g-nlY"/>
+                            <constraint firstItem="uV7-g0-hLw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wQS-Qe-I8o"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="First VC" id="vQ0-B7-B0C"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="75.669642857142847"/>
+        </scene>
+        <!--Second VC-->
+        <scene sceneID="gPs-Ha-rbC">
+            <objects>
+                <viewController id="NmT-pF-bc4" customClass="SecondViewController" customModule="FirebaseCrashlyticsProj" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UPG-7m-ImE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1U-Hf-eXQ">
+                                <rect key="frame" x="111.5" y="459.5" width="191" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Test Crash On Second VC"/>
+                                <connections>
+                                    <action selector="crashButtonTapped:" destination="NmT-pF-bc4" eventType="touchUpInside" id="5kg-Bq-qhp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Txv-0b-uKu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="l1U-Hf-eXQ" firstAttribute="centerY" secondItem="Txv-0b-uKu" secondAttribute="centerY" id="GrH-0X-dPb"/>
+                            <constraint firstItem="l1U-Hf-eXQ" firstAttribute="centerX" secondItem="Txv-0b-uKu" secondAttribute="centerX" id="OEg-gE-HwN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Second VC" id="Y3v-Ig-Meu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rDm-xJ-Ssa" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1906" y="70"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="41Y-DS-hWK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="E29-g9-iWr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iX5-Ec-yyY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1wF-wJ-syO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3fq-jz-h25" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="75.669642857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
